@@ -1,23 +1,98 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
 
-header{
-    margin: auto;
-    text-align: center;
+body, button{
+  font-family: "Poppins", sans-serif, Arial, Helvetica;
 }
+
+/* styling the heading of my app */
+header {
+    
+    padding: 10px 0;
+}
+a{
+    text-decoration: none;
+}
+h1:hover{
+    color: rgb(71, 71, 150);
+    cursor: pointer;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    margin: 0; 
+    color: #000; 
+    padding: 8px;
+}
+
+/* styling the body */
+
 
 main {
     display: flex;
-    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
 
+#movie-list {
+    width: 35%;
+    padding: 20px;
+   
+}
 
+#movie-details {
+    width: 55%; 
+    padding: 10px;   
+}
+
+ul#films {
+    list-style: none;
+    padding: 0;
+}
+
+li.film.item {
+    padding: 4px;
+    cursor: pointer;
+    border: 1px solid rgb(226, 207, 243);
+    margin-bottom: 5px;
+    border-radius: 2px;
+    background-color: rgb(208, 191, 224);
+}
+
+li.film.item:hover {
+    background-color: rgb(178, 120, 229);
 }
 
 img {
-    width: 50vw;
-    height: 500px;
+    max-width: 100%;
+    max-height: 50vh;;
 }
 
+h2 {
+    font-size: 35px;
+}
+p{
+    font-family: b;
+    font-size: 22px;
+}
+button#buy-ticket {
+    background-color: rgb(178, 120, 229);
+    color: var(--light-two);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    width: 250px;
+}
+
+button#buy-ticket:hover {
+    background-color: rgb(208, 191, 224) ;
+}

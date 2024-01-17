@@ -47,7 +47,7 @@ function displayMovieDetailsAndList(movieData) {
 function displayMovieDetails(movie) {
     const movieDetails = document.getElementById('movie-details');
     movieDetails.innerHTML = `
-        <img src="${movie.poster}" alt="${movie.title}" >
+        <img src="${movie.poster}" alt="${movie.title}">
         <h2>${movie.title}</h2>
         <p>Runtime: ${movie.runtime} mins</p>
         <p>Showtime: ${movie.showtime}</p>
